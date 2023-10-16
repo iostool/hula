@@ -1,24 +1,23 @@
 //
 //  ContentView.swift
-//  test01
+//  food
 //
-//  Created by huo yinghui on 2023/9/19.
+//  Created by huo yinghui on 2023/10/16.
 //
 
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-     
         VStack {
-            
-            Image("icon").resizable().aspectRatio(contentMode: .fit).imageScale(.small)
-            
+            Image("Image")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                
             Image(systemName: "globe")
-                .imageScale(.small)
+                .imageScale(.large)
                 .foregroundColor(.accentColor)
-            
-            Text("Hello 222")
+            Text("Hello, world!")
         }
         .padding()
     }
@@ -27,6 +26,5 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-            .frame(width: nil)
     }
 }
