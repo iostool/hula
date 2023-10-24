@@ -20,13 +20,13 @@ struct ContentView: View {
                 .font(.largeTitle)
                 .bold()
             Button("告诉我") {
-                            selectedFood = food.randomElement()  // 随机选择一个食物
-                        }
+                selectedFood = food.randomElement() // 随机选择一个食物
+            }
             // 显示选中的食物
-                      if let food = selectedFood {
-                          Text("你应该吃：\(food)")
-                              .font(.title)
-                      }
+            if let food = selectedFood {
+                Text("你应该吃：\(food)")
+                    .font(.title)
+            }
         }
         .padding()
     }
